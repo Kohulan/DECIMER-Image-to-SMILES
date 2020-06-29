@@ -83,6 +83,20 @@ The repository contains the network and the related scripts for auto-encoder bas
  ```
  - AFter the training is finished, you can use your images to test the model trained using the Evaluate.py. in order to generate a completely new set of test data, you can use the same steps as above mentioned to generate training data.
 
+### Predicting using the trained model
+- In order to use the trained model provided in the repository please follow these steps;
+  - Clone the repository
+    ```
+    git clone https://github.com/Kohulan/DECIMER-Image-to-SMILES.git
+    ```
+  - Change directory to Network folder
+    ```
+    cd DECIMER-Image-to-SMILES/Network
+    ```
+  - Copy a sample image to the Network folder, check the path to the model inside Predictor.py and run
+    ```
+    python3 Predictor.py --input sample.png
+    ```
 ## License:
 - This project is licensed under the MIT License - see the [LICENSE](https://github.com/Kohulan/Decimer-Python/blob/master/LICENSE) file for details
 
