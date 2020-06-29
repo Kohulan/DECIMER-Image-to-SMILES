@@ -1,13 +1,15 @@
 import tensorflow as tf
-import re
-import os
-import sys
 import time
 import json
 from glob import glob
 from PIL import Image
 import pickle
-import I2S_Data
+
+#Create Inception V3 Model
+image_model = tf.keras.applications.InceptionV3(include_top=False,weights='imagenet')
+new_input = image_model.input
+hidden_layer = image_model.layers[-1].output
+image_features_extract_model = tf.keras.Model(new_input, hidden_layer)	
 
 def load_image(image_path):
 	img = tf.io.read_file(image_path)
