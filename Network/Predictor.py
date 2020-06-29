@@ -72,7 +72,7 @@ def evaluate(image):
 #Predictor
 def predictor(Image_path):
 	
-	checkpoint_path = "./train_15mil"
+	checkpoint_path = "./Trained_Models"
 	ckpt = tf.train.Checkpoint(encoder=encoder,decoder=decoder,optimizer = optimizer)
 	ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=50)
 
