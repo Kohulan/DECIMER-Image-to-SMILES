@@ -1,5 +1,0 @@
-*.md filter=lfs diff=lfs merge=lfs -text
-*.DS_Store filter=lfs diff=lfs merge=lfs -text
-*.py filter=lfs diff=lfs merge=lfs -text
-*.txt filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text

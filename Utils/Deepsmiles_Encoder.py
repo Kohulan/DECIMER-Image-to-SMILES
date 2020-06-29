@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2fc6135be94b23acaa84b21640b78e646651a9b93ba6571938c4cc1f2b94cbb
-size 963
+'''
+ * This Software is under the MIT License
+ * Refer to LICENSE or https://opensource.org/licenses/MIT for more information
+ * Written by ©Kohulan Rajan 2019
+'''
+#Original source: https://github.com/nextmovesoftware/deepsmiles
+#Deepsmiles encoding implementation for my work 
+import sys
+import numpy as np
+import deepsmiles
+
+
+print("DeepSMILES version: %s" % deepsmiles.__version__)
+converter = deepsmiles.Converter(rings=True, branches=True)
+print(converter) # record the options used
+
+f = open('Output.txt','w',0)
+
+sys.stdout = f
+
+with open("Input.txt","r") as fp:
+	for i,line in enumerate(fp):
+		chembl =(line.strip().split(",")[0])
+		smiles = (line.strip().split(",")[1])
+		encoded = converter.encode(smiles)
+		#print("Encoded: %s" % encoded)
+		f.write(chembl+"\t\t"+encoded+"\n")
+
+		try:
+			decoded = converter.decode(encoded)
+		except deepsmiles.DecodeError as e:
+			decoded = None
+			f.write("DecodeError! Error message was '%s'" % e.message)
+
+
+f.close()
