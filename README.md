@@ -35,6 +35,7 @@ The repository contains the network and the related scripts for auto-encoder bas
   - matplotlib
   - sklearn
   - pillow
+  - deepsmiles
 
 ## How to set up the directories:
 
