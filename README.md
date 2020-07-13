@@ -31,7 +31,7 @@ The repository contains the network and the related scripts for auto-encoder bas
 ### Installation of TensorFlow
 - This can be done using pip, check the [Tensorflow](https://www.tensorflow.org/install) website for the installation guide. DECIMER can run on both CPU and GPU platforms. Installing Tensorflow-GPU should be done according to this [guide](https://www.tensorflow.org/install/gpu).
 
-### Requitements
+### Requirements
   - matplotlib
   - sklearn
   - pillow
