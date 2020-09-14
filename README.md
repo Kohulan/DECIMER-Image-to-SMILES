@@ -86,6 +86,7 @@ The repository contains the network and the related scripts for auto-encoder bas
 
 ### Predicting using the trained model
 - To use the trained model provided in the repository please follow these steps;
+- Model also available at: https://storage.cloud.google.com/decimer_weights/Trained_Models.zip
   - Clone the repository
     ```
     git clone https://github.com/Kohulan/DECIMER-Image-to-SMILES.git
