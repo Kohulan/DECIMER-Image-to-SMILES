@@ -103,16 +103,24 @@ The repository contains the network and the related scripts for auto-encoder bas
 - This project is licensed under the MIT License - see the [LICENSE](https://github.com/Kohulan/Decimer-Python/blob/master/LICENSE) file for details
 
 ## Citation
-- Use this BibTeX tp cite our paper published in Chemrxiv (-todo: update the BibTeX of peer-reviewed paper)
+- Use this BibTeX to cite
 ```
+
 @article{Rajan2020,
-author = "Kohulan Rajan and Achim Zielesny and Christoph Steinbeck",
-title = "{DECIMER - Towards Deep Learning for Chemical Image Recognition}",
-year = "2020",
-month = "6",
-url = "https://chemrxiv.org/articles/DECIMER_-_Towards_Deep_Learning_for_Chemical_Image_Recognition/12464420",
-doi = "10.26434/chemrxiv.12464420.v1"
+abstract = {The automatic recognition of chemical structure diagrams from the literature is an indispensable component of workflows to re-discover information about chemicals and to make it available in open-access databases. Here we report preliminary findings in our development of Deep lEarning for Chemical ImagE Recognition (DECIMER), a deep learning method based on existing show-and-tell deep neural networks, which makes very few assumptions about the structure of the underlying problem. It translates a bitmap image of a molecule, as found in publications, into a SMILES. The training state reported here does not yet rival the performance of existing traditional approaches, but we present evidence that our method will reach a comparable detection power with sufficient training time. Training success of DECIMER depends on the input data representation: DeepSMILES are superior over SMILES and we have a preliminary indication that the recently reported SELFIES outperform DeepSMILES. An extrapolation of our results towards larger training data sizes suggests that we might be able to achieve near-accurate prediction with 50 to 100 million training structures. This work is entirely based on open-source software and open data and is available to the general public for any purpose.},
+author = {Rajan, Kohulan and Zielesny, Achim and Steinbeck, Christoph},
+doi = {10.1186/s13321-020-00469-w},
+issn = {1758-2946},
+journal = {Journal of Cheminformatics},
+month = {dec},
+number = {1},
+pages = {65},
+title = {{DECIMER: towards deep learning for chemical image recognition}},
+url = {https://doi.org/10.1186/s13321-020-00469-w https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00469-w},
+volume = {12},
+year = {2020}
 }
+
 ```
 
 ## Author:
