@@ -3,6 +3,9 @@ Running DECIMER
 How to run from your shell:
 
    
+    $ conda create --name DECIMER_IMGSEG python=3.7
+    $ conda activate DECIMER_I2S
+    $ conda install pip
     $ pip install tensorflow==2.3.0 pillow deepsmiles sklearn
     $ git clone https://github.com/Kohulan/DECIMER-Image-to-SMILES decimer
     $ cd decimer/Network
