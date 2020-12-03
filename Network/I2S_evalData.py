@@ -59,7 +59,7 @@ def data_loader(PATH):
 
 	PATH = os.path.abspath('.')+'/Train_Images/'
 	total_data = 16780000
-	tokenizer,max_length,train_seqs = I2S_Data.data_loader(PATH,total_data)
+	img_name_train, img_name_val,cap_train,cap_val,tokenizer,max_length,image_features_extract_model = I2S_Data.data_loader(PATH,total_data)
 
 	tokenizer.word_index['<pad>'] = 0
 	tokenizer.index_word[0] = '<pad>'
