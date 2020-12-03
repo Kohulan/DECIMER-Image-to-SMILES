@@ -3,7 +3,7 @@ Running DECIMER
 How to run from your shell:
 
    
-    $ conda create --name DECIMER_IMGSEG python=3.7
+    $ conda create --name DECIMER_I2S python=3.7
     $ conda activate DECIMER_I2S
     $ conda install pip
     $ pip install tensorflow==2.3.0 pillow deepsmiles sklearn
@@ -11,6 +11,7 @@ How to run from your shell:
     $ cd decimer
     $ wget https://storage.googleapis.com/decimer_weights/Trained_Models.zip
     $ unzip Trained_Models.zip
+    $ cd Network
 
 Models can be downloaded from [Trained Model](https://storage.googleapis.com/decimer_weights/Trained_Models.zip) and should be placed under Trained_Models directory
 
