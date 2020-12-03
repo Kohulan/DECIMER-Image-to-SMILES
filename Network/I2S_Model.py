@@ -1,26 +1,24 @@
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 import tensorflow as tf
 
 class BahdanauAttention(tf.keras.Model):
 	def __init__(self, units):
 		super(BahdanauAttention, self).__init__()
-		self.Weights1 = tf.keras.layers.Dense(units)
-		self.Weights2 = tf.keras.layers.Dense(units)
+		self.W1 = tf.keras.layers.Dense(units)
+		self.W2 = tf.keras.layers.Dense(units)
 		self.V = tf.keras.layers.Dense(1)
 
 	def call(self, features, hidden):
 		hidden_with_time_axis = tf.expand_dims(hidden, 1)
-		score = tf.nn.tanh(self.Weights1(features) + self.Weights2(hidden_with_time_axis))
+		score = tf.nn.tanh(self.W1(features) + self.W2(hidden_with_time_axis))
 		attention_weights = tf.nn.softmax(self.V(score), axis=1)
 		context_vector = attention_weights * features
 		context_vector = tf.reduce_sum(context_vector, axis=1)
 		return context_vector, attention_weights
 
 #Encoder 
-class CNN_Enc(tf.keras.Model):
+class CNN_Encoder(tf.keras.Model):
 	def __init__(self, embedding_dim):
-		super(CNN_Enc, self).__init__()
+		super(CNN_Encoder, self).__init__()
 		self.fc = tf.keras.layers.Dense(embedding_dim)
 
 	def call(self, x):
@@ -29,9 +27,9 @@ class CNN_Enc(tf.keras.Model):
 		return x
 
 #Decoder
-class RNN_Dec(tf.keras.Model):
+class RNN_Decoder(tf.keras.Model):
 	def __init__(self, embedding_dim, units, vocab_size):
-		super(RNN_Dec, self).__init__()
+		super(RNN_Decoder, self).__init__()
 		self.units = units
 
 		self.embedding = tf.keras.layers.Embedding(vocab_size, embedding_dim)

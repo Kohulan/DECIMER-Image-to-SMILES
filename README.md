@@ -44,7 +44,7 @@ The repository contains the network and the related scripts for auto-encoder bas
   - The path to the image data is specified in Trainer_Image2Smiles.py
   - The path to checkpoints will be generated in the same folder where your Trainer script is located, If you would like to use a different path it can be modified in Trainer_Image2Smiles.py.
   
- #### Recommonded layout of the directory
+ #### Recommended layout of the directory
  ```bash
   ├── Image2SMILES/
   +   ├ ─ checkpoints/
@@ -86,7 +86,7 @@ The repository contains the network and the related scripts for auto-encoder bas
 
 ### Predicting using the trained model
 - To use the trained model provided in the repository please follow these steps;
-- Model also available at: https://storage.googleapis.com/decimer_weights/Trained_Models.zip
+- Model also available here: [Trained Model](https://storage.googleapis.com/decimer_weights/Trained_Models.zip) and should be placed under Trained_Models directory
   - Clone the repository
     ```
     git clone https://github.com/Kohulan/DECIMER-Image-to-SMILES.git
