@@ -1,5 +1,7 @@
+[![DOI](https://zenodo.org/badge/267869319.svg)](https://zenodo.org/badge/latestdoi/267869319)
 # DECIMER-Image-to-SMILES
 The repository contains the network and the related scripts for auto-encoder based Chemical Image Recognition 
+
 
 ### The project contains code which was written throughout the project (Continuously updated)
 
