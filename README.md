@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/267869319.svg)](https://zenodo.org/badge/latestdoi/267869319)
 # DECIMER-Image-to-SMILES
-The repository contains the network and the related scripts for auto-encoder based Chemical Image Recognition 
+The repository contains the network and the related scripts for encoder-decoder based Chemical Image Recognition 
 
 
 ### The project contains code which was written throughout the project (Continuously updated)
@@ -85,6 +85,9 @@ The repository contains the network and the related scripts for auto-encoder bas
  $ python3 Image2SMILES.py &> log.txt &
  ```
  - After the training is finished, you can use your images to test the model trained using the Evaluate.py. to generate a completely new set of test data, you can use the same steps as above mentioned to generate training data.
+
+Note: Training the model yourself is straightforward, but for reference please check [DECIMER V1.0](https://github.com/Kohulan/DECIMER-Image_Transformer) repository
+
 
 ### Predicting using the trained model
 - To use the trained model provided in the repository please follow these steps;
