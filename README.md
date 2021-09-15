@@ -1,4 +1,4 @@
-# DECIMER V1.0 is now availabe, Please check our new repository [DECIMER-Image_Transformer](https://github.com/Kohulan/DECIMER-Image_Transformer) !!
+# DECIMER V1.0 is now available, Please check our new repository [DECIMER-Image_Transformer](https://github.com/Kohulan/DECIMER-Image_Transformer) !!
 
 [![DOI](https://zenodo.org/badge/267869319.svg)](https://zenodo.org/badge/latestdoi/267869319)
 # DECIMER-Image-to-SMILES
